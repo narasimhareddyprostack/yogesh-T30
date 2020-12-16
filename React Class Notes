@@ -1,0 +1,60 @@
+Events
+
+<button onClick={}>
+
+JSX  - class - className
+       onclick - onClick
+
+Camel Case?
+<button onclick="addCart()">Add to Card</button>
+<button onClick={}></button>
+==============================
+
+Where your are writing event?
+Either Functional/class compoent.
+
+How to create a class component?
+
+class AddCart{
+// class properties(properties and methods)
+//class member - declaration is not required
+
+render(){
+return JSX;//JSX describe the UI
+}
+}
+
+-----------------------------------------------------
+class compoent
+class AddCart extends React.compoent{
+// class properties(properties and methods)
+//class member - declaration is not required
+
+render(){
+//return JSX;//JSX describe the UI
+return(
+    <React.Fragment>
+)
+}
+}
+export default AddCart
+
+
+React Fragment?
+return statement - return JSX, HTML + Javascript : describe the UI.
+                 - One statement 
+                 If you want multiple elements, we have to React Framment.
+
+return( <> <p> <h1> </h1></p></>);
+
+return( <React.Fragment> 
+          <p> 
+             
+           </p>
+           <h1> 
+            Welcome to PSA
+           </h1>
+        </React.Fragment>);
+
+Note: DOM element will not created.
+
